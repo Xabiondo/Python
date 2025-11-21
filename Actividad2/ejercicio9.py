@@ -1,0 +1,1 @@
+print("calculo de áreas")
