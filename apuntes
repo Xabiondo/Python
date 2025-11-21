@@ -1,0 +1,51 @@
+Concepto Python
+Bloques,Indentación (4 espacios)
+Fin de línea --> Salto de línea
+Nulo --> None
+Booleanos --> True o False
+Operadores lógicos --> "and, or, not"
+
+
+Listas Java
+// Java
+String nombre = "Gemini";
+List<String> lista = new ArrayList<>();
+lista.add("A");
+lista.add("B");
+int tamaño = lista.size();
+
+Listas Python
+# Python
+nombre = "Gemini"
+lista = ["A", "B"]  # Listas nativas
+lista.append("C")
+tamano = len(lista) # Función global len()
+
+For each
+for (String s : lista) {
+    System.out.println(s);
+}
+
+Python 
+for s in lista:
+    print(s)
+
+for i, s in enumerate(lista):
+print(f"Índice: {i}, Valor: {s}")
+
+//Hash map
+Map<String, Integer> mapa = new HashMap<>();
+mapa.put("Clave", 10);
+int valor = mapa.get("Clave");
+
+//Hash map Python
+mapa = {"Clave": 10}  # Sintaxis JSON-like
+valor = mapa["Clave"]
+
+//Constructor y clase python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre  # Público por defecto
+
+    def saludar(self):
+        print(f"Hola {self.nombre}") # f-strings (interpolación)
