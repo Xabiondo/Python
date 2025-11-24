@@ -1,0 +1,1 @@
+inputUsuario = str(input("dime una frase "))
