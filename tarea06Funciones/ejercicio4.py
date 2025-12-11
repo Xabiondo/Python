@@ -1,5 +1,9 @@
 def identificadorUnico():
-    nombre = str(input("dime tu nombre"))
+    nombre = str(input("dime tu nombre y apellido"))
+
+    inputUsuario = nombre.split()
+    nombre = inputUsuario[0]
+    apellido = len(inputUsuario[1])
     dni = str(input("dime tu dni "))
     skip = "x"
 
@@ -7,6 +11,10 @@ def identificadorUnico():
         skip = str(input("dale a espacio para continuar"))
     while validarDni(dni):
         dni = str(input("dni inválido, repite"))
+    print("el dni es válido")
+    print("tu identificador es .. " )
+    identificador = nombre+str(apellido)+str(dni[0:3])
+    print(identificador)
     
     
 
@@ -24,4 +32,6 @@ def validarDni(dni):
 
 
 
-validarDni("1231J")
+
+
+identificadorUnico()
