@@ -5,7 +5,7 @@ class Alumno:
         self.nota = nota
 
     def saludar(self):
-        print("hola" + name )
+        print("hola " + self.name )
 
     def aprobado(self):
         if self.nota >= 5:
@@ -15,6 +15,7 @@ class Alumno:
 
 
 xabi = Alumno("xabi" , 10)
+xabi.saludar()
 xabi.aprobado()
 
 
